@@ -140,7 +140,8 @@ body {
 
 /* Page shell */
 .page-shell {
-  min-height: calc(100vh - 48px);
+  min-height: 100vh;
+  padding-top: 48px;
   display: flex;
   flex-direction: column;
 }
@@ -613,6 +614,10 @@ textarea.input { resize: none; }
     padding: 24px 0;
     width: 100%;
   }
+
+  .page-shell {
+    padding-top: 72px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -675,6 +680,10 @@ textarea.input { resize: none; }
 
   .settings-page {
     padding: 16px 0;
+  }
+
+  .page-shell {
+    padding-top: 88px;
   }
 }
 .fade-up-3 { animation-delay: 0.15s; }
