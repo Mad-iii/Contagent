@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon — inline SVG data URI so no extra file needed -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235b6ef5'/%3E%3Cpath d='M8 10h10M8 16h16M8 22h12' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+
+    <title>ContentAgent — AI Content Engine</title>
+    <meta name="description" content="Multi-model AI content generation dashboard with automatic failover across Gemini, Grok, and OpenRouter." />
+
+    <!-- Prevent FOUC on dark theme -->
+    <script>document.documentElement.style.background = '#0e0f14';</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
