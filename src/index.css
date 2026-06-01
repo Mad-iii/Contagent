@@ -141,7 +141,6 @@ body {
 /* Page shell */
 .page-shell {
   min-height: 100vh;
-  padding-top: 48px;
   display: flex;
   flex-direction: column;
 }
@@ -517,26 +516,30 @@ textarea.input { resize: none; }
 
 @media (max-width: 900px) {
   .topbar {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
-    padding: 10px 16px;
+    padding: 0 16px;
   }
 
   .topbar-brand {
-    border-right: none;
-    border-bottom: 1px solid #2a2a28;
-    width: 100%;
-    padding: 10px 0;
-    justify-content: space-between;
+    border-right: 1px solid #2a2a28;
+    border-bottom: none;
+    width: auto;
+    padding: 0;
+    justify-content: flex-start;
   }
 
   .topbar-nav {
-    flex: 1 1 100%;
-    flex-wrap: wrap;
+    flex: 1;
+    flex-wrap: nowrap;
     gap: 8px;
     overflow-x: auto;
-    padding: 10px 0;
-    border-bottom: 1px solid #2a2a28;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .topbar-nav-item {
+    white-space: nowrap;
   }
 
   .topbar-nav-item {
@@ -616,7 +619,7 @@ textarea.input { resize: none; }
   }
 
   .page-shell {
-    padding-top: 72px;
+    padding-top: 0;
   }
 }
 
@@ -683,7 +686,7 @@ textarea.input { resize: none; }
   }
 
   .page-shell {
-    padding-top: 88px;
+    padding-top: 0;
   }
 }
 .fade-up-3 { animation-delay: 0.15s; }
