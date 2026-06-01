@@ -3,7 +3,7 @@
 
 const BASE_URL = "https://agentalent.ai";
 const HANDSHAKE_URL = `${BASE_URL}/api/handshake/a51e0434-8f52-44b4-83b3-f445d69a2960`;
-const OPENROUTER_API_KEY = "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";
+const OPENROUTER_API_KEY = "";
 
 async function callModel(prompt) {
   const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
