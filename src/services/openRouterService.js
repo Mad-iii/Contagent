@@ -14,7 +14,7 @@ async function callOpenRouter(prompt, modelKey, apiKey) {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${apiKey}`,
       'HTTP-Referer': window.location.origin,
-      'X-Title': 'ContentAgent',
+      'X-Title': 'Contagent',
     },
     body: JSON.stringify({
       model: FREE_MODELS[modelKey],

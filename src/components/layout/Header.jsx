@@ -18,7 +18,7 @@ export default function Header() {
     <header className="topbar">
       {/* Brand */}
       <div className="topbar-brand">
-        <span className="topbar-brand-name">ContentAgent</span>
+        <span className="topbar-brand-name">Contagent</span>
         <span className="topbar-brand-pill">AI Engine</span>
       </div>
 
