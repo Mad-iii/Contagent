@@ -26,7 +26,7 @@ export default function ModelStatusBar() {
       </div>
 
       {/* Model rows */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
+      <div className="model-grid">
         {Object.values(MODELS).map((model, i) => {
           const s = modelStatus[model.id];
           const exhausted = s?.isExhausted && s.resetAt > Date.now();

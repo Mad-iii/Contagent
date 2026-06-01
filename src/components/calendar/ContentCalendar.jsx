@@ -34,9 +34,9 @@ export default function ContentCalendar() {
             <div className="section-sub">Scheduled & drafted pieces</div>
           </div>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 8, justifyContent: 'flex-end' }}>
           <button onClick={prev} className="btn btn-ghost" style={{ padding: '6px 10px' }}><ChevronLeft size={13} /></button>
-          <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 20, letterSpacing: '0.06em', minWidth: 160, textAlign: 'center' }}>
+          <span style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 20, letterSpacing: '0.06em', textAlign: 'center' }}>
             {monthName} {year}
           </span>
           <button onClick={next} className="btn btn-ghost" style={{ padding: '6px 10px' }}><ChevronRight size={13} /></button>

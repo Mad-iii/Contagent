@@ -17,7 +17,7 @@ export default function ChannelSelector({ selected, onChange }) {
   };
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 6 }}>
+    <div className="channel-grid">
       {Object.values(CONTENT_TYPES).map((ct) => {
         const Icon = ICONS[ct.icon] || FileText;
         const model = getRoutedModel(ct);

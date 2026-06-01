@@ -433,6 +433,79 @@ textarea.input { resize: none; }
 .app-main {
   flex: 1;
   padding: 32px 40px;
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.generator-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.generator-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.generator-submit {
+  width: 100%;
+  padding: 14px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+
+.channel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.analytics-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.analytics-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.analytics-targets {
+  border: 1px solid var(--border-soft);
+  background: var(--paper);
+}
+
+.batch-list {
+  display: grid;
+  gap: 8px;
+}
+
+.batch-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 24px;
+  border: 1px solid var(--border-soft);
+  border-left: 4px solid var(--ink);
+  background: var(--paper);
+}
+
+.output-panel {
+  width: 100%;
+}
+
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
 }
 
 .settings-page {
@@ -494,6 +567,33 @@ textarea.input { resize: none; }
     padding: 24px 20px;
   }
 
+  .generator-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .channel-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .analytics-kpis,
+  .analytics-charts {
+    grid-template-columns: 1fr;
+  }
+
+  .model-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .batch-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .batch-card .btn {
+    width: 100%;
+  }
+
   .output-body {
     min-height: 220px;
     max-height: 360px;
@@ -544,6 +644,22 @@ textarea.input { resize: none; }
 
   .section-sub {
     font-size: 9px;
+  }
+
+  .generator-grid {
+    gap: 18px;
+  }
+
+  .channel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .batch-card {
+    width: 100%;
+  }
+
+  .model-grid {
+    grid-template-columns: 1fr;
   }
 
   .btn {

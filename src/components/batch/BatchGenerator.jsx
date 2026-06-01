@@ -73,15 +73,9 @@ export default function BatchGenerator() {
 
       {running && <div style={{ marginBottom: 24 }}><BatchProgress progress={progress} /></div>}
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+      <div className="batch-list">
         {BATCH_PRESETS.map((preset, i) => (
-          <div key={preset.id} className={`fade-up fade-up-${i + 1}`} style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            padding: '18px 24px',
-            border: '1px solid var(--border-soft)',
-            borderLeft: '4px solid var(--ink)',
-            background: 'var(--paper)',
-          }}>
+          <div key={preset.id} className={`batch-card fade-up fade-up-${i + 1}`}>
             <div>
               <div style={{ fontSize: 13, fontWeight: 500, letterSpacing: '0.02em', marginBottom: 4 }}>{preset.label}</div>
               <div style={{ fontSize: 10, color: 'var(--muted)' }}>{preset.description}</div>

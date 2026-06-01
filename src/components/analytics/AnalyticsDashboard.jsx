@@ -17,7 +17,7 @@ export default function AnalyticsDashboard() {
       </div>
 
       {/* KPIs */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, marginBottom: 28 }}>
+      <div className="analytics-kpis">
         {[
           { label: 'Total Generated', value: totalGenerated },
           { label: 'Failovers', value: failoverCount, sub: totalGenerated ? `${Math.round((failoverCount / totalGenerated) * 100)}% of total` : '—' },
@@ -32,13 +32,13 @@ export default function AnalyticsDashboard() {
       </div>
 
       {/* Charts */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 28 }}>
+      <div className="analytics-charts">
         <div className="fade-up fade-up-2"><VolumeChart targetProgress={targetProgress} /></div>
         <div className="fade-up fade-up-3"><ModelUsageBreakdown byModel={byModel} /></div>
       </div>
 
       {/* Targets */}
-      <div style={{ border: '1px solid var(--border-soft)', background: 'var(--paper)' }} className="fade-up fade-up-4">
+      <div className="analytics-targets fade-up fade-up-4">
         <div style={{ padding: '10px 20px', background: 'var(--ink)', display: 'flex', justifyContent: 'space-between' }}>
           <span style={{ fontSize: 9, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--warm-gray)' }}>Monthly Targets</span>
         </div>

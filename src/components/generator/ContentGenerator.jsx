@@ -25,9 +25,9 @@ export default function ContentGenerator() {
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32 }}>
+      <div className="generator-grid">
         {/* Left col — controls */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+        <div className="generator-controls">
 
           {/* Channel */}
           <div>
@@ -73,10 +73,9 @@ export default function ContentGenerator() {
           </div>
 
           <button
-            className="btn btn-primary"
+            className="btn btn-primary generator-submit"
             disabled={loading || !topic.trim()}
             onClick={() => generate({ contentType, topic, tone, additionalContext })}
-            style={{ width: '100%', padding: '14px', fontSize: 11, letterSpacing: '0.14em' }}
           >
             <Wand2 size={14} />
             {loading ? 'Generating…' : 'Generate Content'}
