@@ -42,7 +42,11 @@ export default function ApiKeySettings() {
           </div>
         </div>
       ))}
-      <button className="btn btn-primary" onClick={() => { setSaved(true); setTimeout(() => setSaved(false), 2000); }}>
+     <button className="btn btn-primary" onClick={() => {
+        localStorage.setItem('content-agent-state', JSON.stringify(state));
+        setSaved(true);
+        setTimeout(() => setSaved(false), 2000);
+      }}>
         {saved && <Check size={12} />} {saved ? 'Saved!' : 'Save Keys'}
       </button>
     </div>
