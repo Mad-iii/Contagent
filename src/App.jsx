@@ -13,7 +13,7 @@ import ContentTargets from './components/settings/ContentTargets';
 
 function SettingsPage() {
   return (
-    <div style={{ padding: '40px', maxWidth: 640 }}>
+    <div className="settings-page">
       <div className="section-header" style={{ padding: 0, marginBottom: 32 }}>
         <div style={{ display: 'flex', alignItems: 'flex-end', gap: 12 }}>
           <span className="section-number">05</span>
@@ -36,7 +36,7 @@ function Layout({ children }) {
   return (
     <div className="page-shell">
       <Header />
-      <main style={{ flex: 1, padding: '32px 40px' }}>
+      <main className="app-main">
         <QuotaWarning />
         <ModelStatusBar />
         <div style={{ marginTop: 24 }}>{children}</div>

@@ -428,6 +428,139 @@ textarea.input { resize: none; }
 .fade-up { animation: fadeUp 0.3s ease both; }
 .fade-up-1 { animation-delay: 0.05s; }
 .fade-up-2 { animation-delay: 0.10s; }
+
+/* Responsive limits */
+.app-main {
+  flex: 1;
+  padding: 32px 40px;
+}
+
+.settings-page {
+  padding: 40px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 16px;
+  }
+
+  .topbar-brand {
+    border-right: none;
+    border-bottom: 1px solid #2a2a28;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: space-between;
+  }
+
+  .topbar-nav {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #2a2a28;
+  }
+
+  .topbar-nav-item {
+    padding: 10px 14px;
+    min-width: 100px;
+  }
+
+  .topbar-status {
+    display: none;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 0 0;
+    margin-bottom: 24px;
+  }
+
+  .section-number {
+    font-size: 48px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  main,
+  .app-main {
+    padding: 24px 20px;
+  }
+
+  .output-body {
+    min-height: 220px;
+    max-height: 360px;
+  }
+
+  .model-row {
+    flex-direction: column;
+  }
+
+  .model-cell {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .settings-page {
+    padding: 24px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .topbar-brand-name {
+    font-size: 20px;
+  }
+
+  .topbar-brand-pill {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+
+  .topbar-nav-item {
+    flex: 1 1 auto;
+    min-width: auto;
+  }
+
+  .section-number {
+    font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .section-sub {
+    font-size: 9px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 11px;
+  }
+
+  .input {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .settings-page {
+    padding: 16px 0;
+  }
+}
 .fade-up-3 { animation-delay: 0.15s; }
 .fade-up-4 { animation-delay: 0.20s; }
 .fade-up-5 { animation-delay: 0.25s; }
